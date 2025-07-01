@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace FinShark.api.Dtos.Stock
+namespace FinShark.Domain.Dtos.Stock
 {
     public class StockDto
     {

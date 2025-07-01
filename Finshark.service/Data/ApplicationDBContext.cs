@@ -1,4 +1,5 @@
-﻿using FinShark.api.Models;
+﻿//using FinShark.api.Models;
+using FinShark.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace FinShark.api.Data

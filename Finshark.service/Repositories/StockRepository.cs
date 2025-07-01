@@ -1,10 +1,14 @@
-﻿using FinShark.api.Data;
-using FinShark.api.Dtos.Stock;
-using FinShark.api.Interfaces;
-using FinShark.api.Models;
+﻿//using FinShark.api.Data;
+using FinShark.Domain.Dtos.Stock;
+using FinShark.Service.Stocks.Command.Update;
+//using FinShark.api.Interfaces;
+using FinShark.Domain.Repositories;
+//using FinShark.api.Models;
+using FinShark.Domain.Entities;
 using Microsoft.EntityFrameworkCore;
+using FinShark.api.Data;
 
-namespace FinShark.api.Repository
+namespace FinShark.Service.Repositories
 {
     public class StockRepository : IStockRepository // For implementing Repository pattern
     {
@@ -43,9 +47,9 @@ namespace FinShark.api.Repository
             return await _context.Stocks.FindAsync(id);  
         }
 
-        public async Task<Stock?> UpdateAsync(int id, UpdateStockRequestDto updateDto)
+        public async Task<Stock?> UpdateAsync(UpdateStockCommandDto updateDto)
         {
-            var StockDomain = await _context.Stocks.FirstOrDefaultAsync(s => s.Id == id);
+            var StockDomain = await _context.Stocks.FirstOrDefaultAsync(s => s.Id == updateDto.Id);
             if (StockDomain == null)
             {
                 return null;

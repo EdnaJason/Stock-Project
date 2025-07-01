@@ -1,4 +1,4 @@
-﻿namespace FinShark.api.Models
+﻿namespace FinShark.Domain.Entities
 {
     public class Comment
     {

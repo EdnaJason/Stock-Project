@@ -1,8 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using FinShark.Domain.Dtos.Stock;
+using MediatR;
 
-namespace FinShark.api.Dtos.Stock
+namespace FinShark.Service.Stocks.Command.Create
 {
-    public class CreateStockRequestDto
+    public class CreateStockCommand : IRequest<StockDto>
     {
         public string Symbol { get; set; } = string.Empty;
         public string CompanyName { get; set; } = string.Empty;

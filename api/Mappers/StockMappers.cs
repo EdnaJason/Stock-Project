@@ -1,6 +1,10 @@
 ﻿using AutoMapper;
-using FinShark.api.Dtos.Stock;
-using FinShark.api.Models;
+//using FinShark.api.Dtos.Stock;
+//using FinShark.api.Features.StockFeature.Command.Create;
+//using FinShark.api.Models;
+using FinShark.Domain.Dtos.Stock;
+using FinShark.Domain.Entities;
+using FinShark.Service.Stocks.Command.Create;
 
 
 namespace FinShark.api.Mappers
@@ -29,8 +33,8 @@ namespace FinShark.api.Mappers
             CreateMap<CreateStockRequestDto, Stock>();
             CreateMap<Stock, UpdateStockRequestDto>();
             CreateMap<UpdateStockRequestDto, Stock>();
-                //.ForMember(d => d.Id, opt => opt.Ignore()); ;
-
+            //.ForMember(d => d.Id, opt => opt.Ignore()); ;
+            CreateMap<CreateStockCommand, Stock>();
             //CreateMap<Source, Destination>();
         }
 
