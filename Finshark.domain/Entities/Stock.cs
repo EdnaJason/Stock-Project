@@ -1,10 +1,11 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
+using FinShark.Domain.Common;
 
 namespace FinShark.Domain.Entities
 {
-    public class Stock 
+    public class Stock : AggregateRoot
     {
-        public int Id { get; set; }
+        //public int Id { get; set; }
         public string Symbol { get; set; } = string.Empty;
         public string CompanyName { get; set; } = string.Empty;
         [Column(TypeName = "decimal(18,2)")]    //to ensure it is a monetary amt, this limits it to 18 digits and 2 decimal pts

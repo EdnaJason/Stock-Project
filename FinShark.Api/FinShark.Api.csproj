@@ -33,12 +33,8 @@
 
   <ItemGroup>
     <Folder Include="api\Data\" />
-    <Folder Include="api\Dtos\" />
     <Folder Include="api\Features\StockFeature\Command\" />
     <Folder Include="api\Features\StockFeature\Query\" />
-    <Folder Include="api\Interfaces\" />
-    <Folder Include="api\Models\" />
-    <Folder Include="api\Repository\" />
   </ItemGroup>
 
   <ItemGroup>
