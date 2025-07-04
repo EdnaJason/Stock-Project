@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinShark.Domain", "FinShark
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinShark.Service", "Finshark.Service\FinShark.Service.csproj", "{C799E911-CB38-E07F-4F46-6812F9A38E9D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FinShark.Service.Test", "FinShark.Test\FinShark.Service.Test.csproj", "{D856D650-5139-4E66-B24D-FF6C02D4C7A5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{C799E911-CB38-E07F-4F46-6812F9A38E9D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C799E911-CB38-E07F-4F46-6812F9A38E9D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C799E911-CB38-E07F-4F46-6812F9A38E9D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D856D650-5139-4E66-B24D-FF6C02D4C7A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D856D650-5139-4E66-B24D-FF6C02D4C7A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D856D650-5139-4E66-B24D-FF6C02D4C7A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D856D650-5139-4E66-B24D-FF6C02D4C7A5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
